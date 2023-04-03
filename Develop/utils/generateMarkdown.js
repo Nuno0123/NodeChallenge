@@ -1,12 +1,21 @@
-const licenses = ["https://img.shields.io/badge/License-Boost_1.0-lightblue.svg", "https://img.shields.io/badge/License-BSD_3--Clause-blue.svg", "https://img.shields.io/badge/License-BSD_2--Clause-orange.svg"]
+// const licenses = ["https://img.shields.io/badge/License-Boost_1.0-lightblue.svg", "https://img.shields.io/badge/License-BSD_3--Clause-blue.svg", "https://img.shields.io/badge/License-BSD_2--Clause-orange.svg"]
 
-const links = ["https://www.boost.org/LICENSE_1_0.txt", "https://opensource.org/licenses/BSD-3-Clause", "https://opensource.org/licenses/BSD-2-Clause"]
+// const links = ["https://www.boost.org/LICENSE_1_0.txt", "https://opensource.org/licenses/BSD-3-Clause", "https://opensource.org/licenses/BSD-2-Clause"]
 
 
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  return `[![License](${0})](${})`
+  if (value === "Apache 2.0") {
+      return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]";
+  } else if (value === "Boost Software 1.0") {
+    return "[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)]";
+  } else if (value === "BSD 3-Clause License") {
+    return "[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)]";
+  } else if (value === "BSD 2-Clause") {
+    return "[![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)]";
+  }
+  
 
 }
 
@@ -15,7 +24,15 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  return ``
+  if (value === "Apache 2.0") {
+    return "(https://opensource.org/licenses/Apache-2.0)";
+  } else if (value === "Boost Software 1.0") {
+    return "(https://www.boost.org/LICENSE_1_0.txt)";
+  } else if (value === "BSD 3-Clause License") {
+    return "(https://opensource.org/licenses/BSD-3-Clause)";
+  } else if (value === "BSD 2-CLause License") {
+    return "(https://opensource.org/licenses/BSD-2-Clause)";
+  }
 }
 
 // TODO: Create a function that returns the license section of README
