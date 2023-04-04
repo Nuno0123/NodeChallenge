@@ -54,6 +54,7 @@ const questions = [
             "Boost Software 1.0",
             "BSD 3-Clause License",
             "BSD 2-Clause License",
+            "None"
         ],
         validate: validateInput,
     },
@@ -97,9 +98,13 @@ const questions = [
     },
 ];
 
+
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, generateMarkdown(data), function (err) {
+    let markdownData = generateMarkdown(data);
+    console.log("Data to Write: ", markdownData);
+    
+    fs.writeFile(fileName, markdownData, function (err) {
         if (err) {
             return console.log(err);
         }
@@ -110,7 +115,6 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions).then((data) => {
         console.log(JSON.stringify(data, null, ""));
-        data.getLicense(data.license);
         writeToFile("./example/README.md", data);
     });
 }
