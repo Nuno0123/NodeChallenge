@@ -43,10 +43,8 @@ function generateMarkdown(data) {
   console.log("Collected Data: ", data);
 
   return `
-# Project 
+# Project Title
 ${data.title}
-
-${renderLicenseBadge(data.license)}
 
 # Description
 ${data.description}
@@ -63,9 +61,10 @@ ${data.description}
 ${data.installation}
 # Usage
 ${data.usage}
+${renderLicenseBadge(data.license)}
 ${renderLicenseSection(data.license)}
 ${renderLicenseLink(data.license)}
-* As this license list was not comprehensive, if you need another license, use the contact information below to ask for license to be added. 
+
 # Contributing 
 ${data.contributing}
 # Tests
