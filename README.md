@@ -33,8 +33,9 @@ SO THAT I can quickly create a professional README for a new project
 
 
 ## Video Demo 
+Since this is a command-line application it won’t be a deployable website, so here is a <a href="https://drive.google.com/file/d/12WZbrqlQ2OmHAXRIOhXwL1OhubYM87To/view" target="_blank">Link</a> to a video walkthrough that shows the function of my application.
 
 ## Screenshot
-![screenshot]
+![screenshot](./img/NodeChallenge01.png) ![screenshot](./img/NodeChallenge02.png)
 # Contact
 [Nestor Montañez on Github](https://github.com/Nuno0123)
