@@ -1,11 +1,11 @@
 
 # Project 
-Title
+title
 
 ![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
 
 # Description
-go 
+group 
 
 # Table of Contents 
 * [Installation](#-Installation)
@@ -18,14 +18,14 @@ go
 # Installation
 go
 # Usage
-og
+go
 # License
 (https://opensource.org/licenses/Apache-2.0)
 * As this license list was not comprehensive, if you need another license, use the contact information below to ask for license to be added. 
 # Contributing 
-og
+go
 # Tests
 go
 # Contact Information 
 * GitHub Username: go
-* Contact Email: NUno0123@me.com
+* Contact Email: Nuno0123@me.com
